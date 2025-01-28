@@ -4,7 +4,7 @@ class AboutMe final
 public:
   static const std::string Name() const
   {
-    return "Andreas Maerten";
+    return "TH3S3RP3NT";
   }
 
   static const std::vector<std::string> Languages() const
@@ -19,10 +19,10 @@ public:
   static const std::vector<std::string> CodingLangues() const
   {
     return {
-      "C++",
-      "C#",
+      "HTML",
+      "CSS",
       "Java",
-      "NodeJS",
+      "PHP",
       "Python"
     };
   }
@@ -41,8 +41,7 @@ public:
   static const std::unordered_map<std::string, std::string> Socials() const
   {
     return {
-      { "twitter", "Yimura9" },
-      { "discord", "yimura.dev" }
+      { "discord", "KGB_Operative" }
     };
   }
 };
