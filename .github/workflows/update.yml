@@ -20,6 +20,8 @@ jobs:
       with:
         username: TH3S3RP3NT
         github_token: ${{ secrets.GITHUB_TOKEN }}
+        template: ./TEMPLATE.md
+        readme: ./README.md
     - name: Commit & Push changes
       uses: actions-js/push@master
       with:
