@@ -16,7 +16,7 @@ jobs:
         persist-credentials: false
         fetch-depth: 0
     - name: Create README.md
-      uses: actions-js/privatetest@master
+      uses: actions-js/profile-readme@master
       with:
         username: TH3S3RP3NT
         github_token: ${{ secrets.GITHUB_TOKEN }}
