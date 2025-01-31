@@ -11,21 +11,16 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-    - name: Check TEMPLATE.md existence
-      run: ls -l TEMPLATE.md
-    - uses: actions/checkout@master
-      with:
-        persist-credentials: false
-        fetch-depth: 0
-    - name: Create README.md
-      uses: actions-js/profile-readme@master
-      with:
-        username: TH3S3RP3NT
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        template: ./TEMPLATE.md
-        readme: ./README.md
-    - name: Commit & Push changes
-      uses: actions-js/push@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: ${{ github.ref }}
+      - uses: actions/checkout@master
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - name: Create README.md
+        uses: actions-js/profile-readme@master
+        with:
+          username: TH3S3RP3NT
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit & Push changes
+        uses: actions-js/push@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
