@@ -3,6 +3,7 @@ name: Widgets
 on:
   schedule:
     - cron: '0 */24 * * *'
+  workflow_run: 
   push:
     branches:
       - master
