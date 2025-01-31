@@ -1,51 +1,43 @@
 
-```cpp
-class AboutMe final
-{
-public:
-  static const std::string Name() const
-  {
-    return "TH3S3RP3NT";
-  }
+```python
+class AboutMe:
+    @staticmethod
+    def name():
+        return "TH3S3RP3NT"
 
-  static const std::vector<std::string> Languages() const
-  {
-    return {
-      "English",
-      "Dutch",
-      "French"
-    };
-  }
+    @staticmethod
+    def languages():
+        return [
+            "English",
+            "Dutch",
+            "French"
+        ]
 
-  static const std::vector<std::string> CodingLangues() const
-  {
-    return {
-      "HTML",
-      "CSS",
-      "Java",
-      "PHP",
-      "Python"
-    };
-  }
+    @staticmethod
+    def coding_languages():
+        return [
+            "HTML",
+            "CSS",
+            "Java",
+            "PHP",
+            "Python"
+        ]
 
-  static const std::vector<std::string> Skillset() const
-  {
-    return {
-      "Docker",
-      "Github CI/CD",
-      "Reverse Engineering",
-      "Linux",
-      "Git"
-    };
-  }
+    @staticmethod
+    def skillset():
+        return [
+            "Docker",
+            "Github CI/CD",
+            "Reverse Engineering",
+            "Linux",
+            "Git"
+        ]
 
-  static const std::unordered_map<std::string, std::string> Socials() const
-  {
-    return {
-      { "discord", "KGB_Operative" }
-    };
-  }
-};
+    @staticmethod
+    def socials():
+        return {
+            "discord": "KGB_Operative"
+        }
 ```
 
 ## 🤹 Recent Activity
