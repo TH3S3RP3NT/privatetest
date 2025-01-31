@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Check TEMPLATE.md existence
-      run: ls -l ./TEMPLATE.md
+      run: ls -l TEMPLATE.md
     - uses: actions/checkout@master
       with:
         persist-credentials: false
